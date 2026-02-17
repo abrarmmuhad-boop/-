@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة صَحّ - SAH Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="noise-overlay"></div>
+
+    <main class="container">
+        <header class="hero-header">
+            <div class="logo-container">
+                <img src="l.jpg" alt="شعار صح" class="logo-image">
+                <div class="logo-glow"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">منصة</span>
+                    <span class="title-main">صَحّ</span>
+                    <span class="title-subtitle">SAH PLATFORM</span>
+                     <span class="title-subtitle">خلك مصحــصح...حياتك مو لعبة!</span>
+                </h1>
+                <p class="hero-tagline">
+                    <span class="tagline-icon">✨</span>
+                    التوعية الصحية بالذكاء الاصطناعي
+                    <span class="tagline-icon">✨</span>
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">خدمات ذكية</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">AI</div>
+                        <div class="stat-label">مدعوم بـ Gemini</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">متاح دائمًا</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav-pills">
+            <button class="nav-pill active" onclick="showSection('homeSection')">
+                <span class="pill-icon">🏠</span>
+                <span class="pill-text">الرئيسية</span>
+            </button>
+            <button class="nav-pill" onclick="showSection('rumorSection')">
+                <span class="pill-icon">🧠</span>
+                <span class="pill-text">كاشف الشائعات</span>
+            </button>
+            <button class="nav-pill" onclick="showSection('coSection')">
+                <span class="pill-icon">💨</span>
+                <span class="pill-text">خطة الإقلاع</span>
+            </button>
+        </nav>
+
+        <section id="homeSection" class="section-container active">
+            <div class="features-grid">
+                <div class="feature-card card-purple" onclick="showSection('rumorSection')">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">🧠</div>
+                    <h2 class="card-title">كاشف الشائعات</h2>
+                    <p class="card-description">
+                        تحقق من صحة أي معلومة صحية باستخدام الذكاء الاصطناعي المتقدم
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">تحليل فوري</span>
+                        <span class="tag">دقة عالية</span>
+                        <span class="tag">مصادر موثوقة</span>
+                    </div>
+                    <button class="card-button">ابدأ الفحص ←</button>
+                </div>
+
+                <div class="feature-card card-green" onclick="showSection('coSection')">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">💨</div>
+                    <h2 class="card-title">خطة الإقلاع عن التدخين</h2>
+                    <p class="card-description">
+                        احصل على خطة شخصية ومتدرجة للإقلاع عن التدخين بناءً على حالتك
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">خطة مخصصة</span>
+                        <span class="tag">متابعة أسبوعية</span>
+                        <span class="tag">نصائح عملية</span>
+                    </div>
+                    <button class="card-button">ابدأ الآن ←</button>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="info-icon">ℹ️</div>
+                <div class="info-content">
+                    <h3>نبذة عن المنصة</h3>
+                    <p>منصة صَحّ هي أداة توعية صحية مدعومة بالذكاء الاصطناعي. نستخدم تقنيات Gemini المتقدمة لتقديم معلومات صحية دقيقة وموثوقة.</p>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <div class="warning-icon">⚠️</div>
+                <div class="warning-content">
+                    <h3>تنبيه مهم</h3>
+                    <p>هذه المنصة للتوعية الصحية فقط وليست بديلًا عن الاستشارة الطبية المتخصصة. في حالات الطوارئ، يرجى مراجعة الطبيب فورًا.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="rumorSection" class="section-container">
+            <div class="section-header">
+                <button class="back-btn" onclick="showSection('homeSection')">← رجوع</button>
+                <div class="section-title-wrap">
+                    <span class="section-icon">🧠</span>
+                    <h2 class="section-title">كاشف الشائعات الصحية</h2>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <span class="tip-icon">💡</span>
+                <div>
+                    <h4>كيف تستخدم الأداة؟</h4>
+                    <p>اكتب أو الصق أي معلومة صحية تريد التحقق منها، وسيقوم الذكاء الاصطناعي بتحليلها.</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">
+                    <span>المعلومة أو الإشاعة الصحية</span>
+                    <span class="badge required">مطلوب</span>
+                </label>
+                <textarea id="rumorText" class="form-textarea" rows="6" placeholder="مثال: الزنجبيل يعالج السرطان نهائيًا..."></textarea>
+            </div>
+
+            <button class="primary-btn" onclick="checkRumor()">
+                <span class="btn-icon">🔍</span>
+                <span>فحص الإشاعة بالذكاء الاصطناعي</span>
+            </button>
+
+            <div id="rumorStatus" class="status-msg"></div>
+
+            <div id="rumorResultBox" class="result-box hidden">
+                <div class="result-badges">
+                    <div id="rumorVerdict" class="result-badge"></div>
+                    <div id="rumorRisk" class="result-badge"></div>
+                </div>
+
+                <div class="result-section">
+                    <h3><span>📊</span> التفسير</h3>
+                    <p id="rumorExplanation"></p>
+                </div>
+
+                <div class="result-section">
+                    <h3><span>✅</span> التصحيح</h3>
+                    <p id="rumorCorrection"></p>
+                </div>
+
+                <div class="result-section">
+                    <h3><span>💡</span> نصيحة آمنة</h3>
+                    <p id="rumorAdvice"></p>
+                </div>
+
+                <details class="json-details">
+                    <summary>عرض البيانات الكاملة (JSON)</summary>
+                    <pre id="rumorRaw"></pre>
+                </details>
+            </div>
+        </section>
+
+        <section id="coSection" class="section-container">
+            <div class="section-header">
+                <button class="back-btn" onclick="showSection('homeSection')">← رجوع</button>
+                <div class="section-title-wrap">
+                    <span class="section-icon">💨</span>
+                    <h2 class="section-title">خطة الإقلاع عن التدخين</h2>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <span class="tip-icon">💡</span>
+                <div>
+                    <h4>كيف تعمل الأداة؟</h4>
+                    <p>أدخل بياناتك الشخصية وعادات التدخين، وسيقوم الذكاء الاصطناعي بإنشاء خطة مخصصة لك.</p>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="form-group">
+                    <label class="form-label">
+                        <span>العمر</span>
+                        <span class="badge required">مطلوب</span>
+                    </label>
+                    <input type="number" id="age" class="form-input" min="10" max="90" value="25" placeholder="أدخل عمرك">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">
+                        <span>عدد السجائر يوميًا</span>
+                        <span class="badge required">مطلوب</span>
+                    </label>
+                    <input type="number" id="cigs" class="form-input" min="0" max="60" value="10" placeholder="عدد السجائر">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">
+                        <span>سنوات التدخين</span>
+                        <span class="badge required">مطلوب</span>
+                    </label>
+                    <input type="number" id="years" class="form-input" min="0" max="70" value="5" placeholder="كم سنة">
+                </div>
+
+                <div class="form-group full-width">
+                    <label class="form-label">
+                        <span>نسبة أول أكسيد الكربون (CO)</span>
+                        <span class="value-badge" id="coVal">15</span>
+                        <span>ppm</span>
+                    </label>
+                    <input type="range" id="co" class="form-slider" min="0" max="50" value="15">
+                </div>
+
+                <div class="form-group full-width">
+                    <label class="form-label">
+                        <span>مستوى الحافز للإقلاع</span>
+                        <span class="value-badge" id="motVal">7</span>
+                        <span>/ 10</span>
+                    </label>
+                    <input type="range" id="motivation" class="form-slider" min="1" max="10" value="7">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">
+                    <span>متى تدخن عادةً؟</span>
+                    <span class="badge optional">اختياري</span>
+                </label>
+                <div class="checkbox-grid">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="tr" value="morning coffee" checked>
+                        <span class="checkbox-box"></span>
+                        <span>قهوة الصباح</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="tr" value="work stress" checked>
+                        <span class="checkbox-box"></span>
+                        <span>ضغط العمل</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="tr" value="after meals">
+                        <span class="checkbox-box"></span>
+                        <span>بعد الأكل</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="tr" value="friends">
+                        <span class="checkbox-box"></span>
+                        <span>مع الأصدقاء</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">
+                    <span>الأعراض التي تعاني منها</span>
+                    <span class="badge optional">اختياري</span>
+                </label>
+                <textarea id="symptoms" class="form-textarea" rows="3" placeholder="مثال: صداع، كحة، ضيق نفس..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">
+                    <span>عوامل إضافية</span>
+                    <span class="badge optional">اختياري</span>
+                </label>
+                <div class="chip-input">
+                    <input type="text" id="factorInput" class="form-input" placeholder="اكتب عامل واضغط إضافة">
+                    <button class="chip-btn" onclick="addFactor()">+ إضافة</button>
+                </div>
+                <div id="factorChips" class="chips"></div>
+            </div>
+
+            <button class="primary-btn" onclick="analyzeCO()">
+                <span class="btn-icon">🚀</span>
+                <span>إنشاء خطتي للإقلاع</span>
+            </button>
+
+            <div id="coStatus" class="status-msg"></div>
+
+            <div id="coResultBox" class="result-box hidden">
+                <div class="result-badges">
+                    <div id="coRiskBadge" class="result-badge"></div>
+                    <div id="coVerdictBadge" class="result-badge"></div>
+                </div>
+
+                <div class="result-section">
+                    <h3><span>📋</span> ملخص الحالة</h3>
+                    <p id="coSummary"></p>
+                </div>
+
+                <div class="result-section">
+                    <h3><span>🔍</span> تحليل شخصي</h3>
+                    <p id="coInsight"></p>
+                </div>
+
+                <div class="result-section highlight">
+                    <h3><span>📅</span> مدة الخطة</h3>
+                    <p id="coStrategy" class="big-text"></p>
+                </div>
+
+                <div class="result-section">
+                    <h3><span>📊</span> الخطة الأسبوعية</h3>
+                    <div id="coPlanGrid" class="plan-grid"></div>
+                </div>
+
+                <div class="result-section">
+                    <h3><span>🎯</span> استراتيجيات المحفزات</h3>
+                    <div id="coTriggerGrid" class="trigger-grid"></div>
+                </div>
+
+                <details class="json-details">
+                    <summary>عرض البيانات الكاملة (JSON)</summary>
+                    <pre id="coRaw"></pre>
+                </details>
+
+                <div class="warning-box">
+                    <div class="warning-icon">⚠️</div>
+                    <div class="warning-content">
+                        <h3>تنبيه صحي</h3>
+                        <p>إذا شعرت بألم في الصدر أو ضيق تنفس شديد، راجع الطوارئ فورًا. هذه الخطة للتوعية فقط.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>منصة صَحّ (SAH) • مشروع توعية صحية بالذكاء الاصطناعي</p>
+            <p class="footer-small">Powered by Gemini AI • 2025</p>
+        </footer>
+    </main>
+
+    <script src="jv.js"></script>
+</body>
+</html>
